@@ -1,1 +1,36 @@
-
+{
+  "version": 1,
+  "updated": "2026-11-24",
+  "info": "Taxas de referência do FinLife. Indicadores em % a.a. (TR em % a.m.); taxas dos produtos no formato de cada indexador (POS_CDI = % do CDI; PRE = % a.a.; CDI_MAIS/SELIC_MAIS/IPCA_MAIS = spread % a.a.); fee = custódia/administração % a.a.",
+  "indicators": {
+    "selic": 13.0,
+    "cdi": 12.9,
+    "ipca": 4.2,
+    "tr_monthly": 0.12
+  },
+  "products": {
+    "TESOURO_SELIC": { "label": "Tesouro Selic", "rates": { "SELIC_MAIS": 0.08 }, "fee": 0.2 },
+    "TESOURO_PREFIXADO": { "label": "Tesouro Prefixado", "rates": { "PRE": 12.8 }, "fee": 0.2 },
+    "TESOURO_PREFIXADO_JS": { "label": "Tesouro Prefixado c/ Juros Semestrais", "rates": { "PRE": 12.9 }, "fee": 0.2 },
+    "TESOURO_IPCA": { "label": "Tesouro IPCA+", "rates": { "IPCA_MAIS": 7.2 }, "fee": 0.2 },
+    "TESOURO_IPCA_JS": { "label": "Tesouro IPCA+ c/ Juros Semestrais", "rates": { "IPCA_MAIS": 7.1 }, "fee": 0.2 },
+    "TESOURO_RENDA": { "label": "Tesouro RendA+", "rates": { "IPCA_MAIS": 7.0 }, "fee": 0.2 },
+    "TESOURO_EDUCA": { "label": "Tesouro Educa+", "rates": { "IPCA_MAIS": 7.0 }, "fee": 0.2 },
+    "POUPANCA": { "label": "Poupança", "rates": { "POUPANCA": 0.0 }, "fee": 0.0 },
+    "CDB": { "label": "CDB", "rates": { "POS_CDI": 105.0, "PRE": 13.5, "IPCA_MAIS": 7.5, "CDI_MAIS": 1.0 }, "fee": 0.0 },
+    "RDB": { "label": "RDB", "rates": { "POS_CDI": 110.0, "PRE": 13.8 }, "fee": 0.0 },
+    "CONTA_REMUNERADA": { "label": "Conta remunerada / Caixinha", "rates": { "POS_CDI": 100.0 }, "fee": 0.0 },
+    "LC": { "label": "LC (Letra de Câmbio)", "rates": { "POS_CDI": 115.0, "PRE": 14.2 }, "fee": 0.0 },
+    "LCI": { "label": "LCI", "rates": { "POS_CDI": 92.0, "PRE": 11.2, "IPCA_MAIS": 6.2 }, "fee": 0.0 },
+    "LCA": { "label": "LCA", "rates": { "POS_CDI": 93.0, "PRE": 11.3, "IPCA_MAIS": 6.3 }, "fee": 0.0 },
+    "LCD": { "label": "LCD", "rates": { "POS_CDI": 93.0, "IPCA_MAIS": 6.3 }, "fee": 0.0 },
+    "LIG": { "label": "LIG", "rates": { "POS_CDI": 95.0, "IPCA_MAIS": 6.4 }, "fee": 0.0 },
+    "CRI": { "label": "CRI", "rates": { "IPCA_MAIS": 7.5, "POS_CDI": 98.0, "CDI_MAIS": 0.8 }, "fee": 0.0 },
+    "CRA": { "label": "CRA", "rates": { "IPCA_MAIS": 7.7, "POS_CDI": 98.0, "CDI_MAIS": 0.8 }, "fee": 0.0 },
+    "DEBENTURE": { "label": "Debênture", "rates": { "CDI_MAIS": 1.5, "IPCA_MAIS": 8.0, "PRE": 14.5 }, "fee": 0.0 },
+    "DEBENTURE_INCENTIVADA": { "label": "Debênture incentivada", "rates": { "IPCA_MAIS": 7.3, "CDI_MAIS": 0.5 }, "fee": 0.0 },
+    "FUNDO_DI": { "label": "Fundo DI / Renda Fixa", "rates": { "POS_CDI": 100.0 }, "fee": 0.3 },
+    "PREVIDENCIA_RF": { "label": "Previdência (PGBL/VGBL) RF", "rates": { "POS_CDI": 100.0 }, "fee": 0.8 },
+    "CONSORCIO_CONTEMPLADO": { "label": "Consórcio contemplado", "rates": { "POS_CDI": 85.0, "POUPANCA": 0.0 }, "fee": 0.0 }
+  }
+}
