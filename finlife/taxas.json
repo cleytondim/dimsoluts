@@ -6,7 +6,7 @@
     "selic": 13.0,
     "cdi": 12.9,
     "ipca": 4.2,
-    "tr_monthly": 0.12
+    "tr_monthly": 10
   },
   "products": {
     "TESOURO_SELIC": { "label": "Tesouro Selic", "rates": { "SELIC_MAIS": 0.08 }, "fee": 0.2 },
